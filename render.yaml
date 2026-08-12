@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: deepgram-transcriber
+    runtime: docker
+    dockerfilePath: ./server/Dockerfile
+    dockerContext: ./server
+    plan: free
+    envVars:
+      - key: DEEPGRAM_API_KEY
+        sync: false
