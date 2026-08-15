@@ -28,7 +28,7 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # Provide your API key
-export DEEPGRAM_API_KEY=your_key_here   # Windows: set DEEPGRAM_API_KEY=your_key_here
+export DEEPGRAM_API_KEY=I will not be using mine   # Windows: set DEEPGRAM_API_KEY=I will not be using mine, figure it out
 
 python main.py
 # or: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
@@ -48,7 +48,7 @@ The server listens on `http://localhost:8000`.
 
 ```bash
 cd server
-echo "DEEPGRAM_API_KEY=your_key_here" > .env
+echo "DEEPGRAM_API_KEY=no thanks" > .env
 cd ..
 docker compose up --build
 ```
